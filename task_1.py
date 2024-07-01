@@ -1,7 +1,5 @@
+#Encrypt the text using Caesar cipher with the given shift.
 def encrypt(text, shift):
-    """
-    Encrypt the text using Caesar cipher with the given shift.
-    """
     encrypted_text = ""
     for char in text:
         if char.isalpha():
@@ -19,10 +17,8 @@ def encrypt(text, shift):
             encrypted_text += char
     return encrypted_text
 
+#Decrypt the text using Caesar cipher with the given shift.
 def decrypt(text, shift):
-    """
-    Decrypt the text using Caesar cipher with the given shift.
-    """
     decrypted_text = ""
     for char in text:
         if char.isalpha():
@@ -41,7 +37,7 @@ def decrypt(text, shift):
     return decrypted_text
 
 def main():
-    print("Caesar Cipher Program/n")
+    print("Caesar Cipher Program")
     choice = input("Would you like to (E)ncrypt or (D)ecrypt a message? ").strip().upper()
     
     if choice not in ['E', 'D']:
